@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <Header className="m-7"/>
+        <Header className=""/>
         <Searcher />
         <main className="flex-1">
           {children}
