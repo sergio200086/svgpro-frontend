@@ -26,14 +26,14 @@ function LoadIcons() {
        {Icons.map((icon)=>{
             const copyToClipboard = () => {
             navigator.clipboard.writeText(icon.svgText)
-                .then(() => alert(`SVG de "${icon.name}" copiado al portapapeles`))
+                .then(() => alert(`SVG de "${icon.text}" copiado al portapapeles`))
                 .catch((err) => console.error('Error al copiar:', err));
             };
             const svgHtml = icon.svgText
                 .replace(/width="\d+"/, 'width="39"')
                 .replace(/height="\d+"/, 'height="39"');
         return(
-            <div key={icon.name} className="flex flex-col justify-cente items-center hover:bg-amber-50/10 rounded-lg transition-all duration-300">
+            <div key={icon.name} className="flex flex-col justify-center items-center hover:bg-amber-50/10 rounded-lg transition-all duration-300 ">
                  <div className="flex justify-center items-center my-2" dangerouslySetInnerHTML={{__html: svgHtml}} ></div>    
                  <div className="mx-2 text-pretty" >{icon.text}</div>
                  <button onClick={copyToClipboard} className="flex justify-center items-center text-lime-100/80 cursor-pointer my-2 hover:bg-neutral-200/20 rounded-lg transition-all duration-300" title="Copy to clipboard">

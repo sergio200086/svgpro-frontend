@@ -22,7 +22,7 @@ function Header({className =""}) {
                       Upload
                     </a>
                   </li>
-                  
+                
               </ul>
           </nav>  
         </div>
