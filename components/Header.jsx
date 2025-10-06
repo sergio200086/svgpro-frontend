@@ -8,17 +8,17 @@ function Header({className =""}) {
           <nav className= {`flex text-center ${className}`}>
               <ul className="flex gap-x-1 md:gap-x-5">
                   <li>
-                    <a href="#" className="transition hover:text-gray-500/75  dark:hover:text-amber-200/85">
+                    <a href="#" className="transition hover:text-gray-500/75  dark:hover:text-lime-500">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="transition hover:text-gray-500/75  dark:hover:text-amber-200/85">
+                    <a href="#" className="transition hover:text-gray-500/75  dark:hover:text-lime-500">
                       About
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="transition hover:text-gray-500/75  dark:hover:text-amber-200/85">
+                    <a href="form" className="transition hover:text-gray-500/75  dark:hover:text-lime-500">
                       Upload
                     </a>
                   </li>
